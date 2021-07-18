@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap');
+/* ============ global styles ========= */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    min-width: 300px;
+}
+
+.header {
+    background-color: lightskyblue;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* ================== NAVBAR =========== */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.logo {
+    text-transform: uppercase;
+    line-height: 80px;
+    padding: 0 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.nav-toggle
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    line-height: 80px;
+
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    line-height: 80px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 3px 15px;
+    border-radius: 3px;
+    transition-property: letter-spacing, background-color, color;
+    transition: .5s;
+}
+.nav-menu-link:hover,
+.nav-menu-link:focus {
+    background-color: darkblue;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.nav-menu-active {
+    background-color: aqua;
+
+}
+
+:focus {
+    outline: none;
+}
+
+/* ============ END NAVBAR =========== */
+
+/* =========== NAV BAR ------ MOBILE DEVICE ========= */
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .header {
+        height: 60px;
+    }
+    
+    
+    
+    .logo {
+        padding: 0 30px;
+        cursor: pointer;
+        font-size: 25px;
+        line-height: 60px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        background-color: darkturquoise;
+        position:fixed;
+        top: 60px;
+        width: 50%;
+        align-items: center;
+        padding: 20px 0;
+        border-radius: 5px;
+
+        height: calc(100% - 40%);
+        overflow-y: auto;
+
+        right: 100%;
+        transition: right 1s;
+    }
+
+    .nav-menu_visible {
+        right: 0;
+    }
+
+    .nav-toggle
+    {
+        display: block;
+    }
+
+    .nav-menu-link {
+        font-size: 20px;
+        color: darkblue;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link:focus{
+        background: none;
+        color: white;
+    }
+
+    .nav-menu-item {
+        line-height: 80px;
+    }
+
+
+
+    .nav-menu_active {
+        background: none;
+        color: white;
+        letter-spacing: 6px;
+    }
+
+}
+
+/* =========== END NAV BAR ------ MOBILE DEVICE ========= */
+
+/* =========== MAIN - MAIN CONTAINER ========= */
+
+.main 
+{
+    width: 100%;
+    height: 625px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title 
+{
+    color: #fff;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+    padding-bottom: 300px;
+    margin-top: 90px;
+    margin-bottom: -10px;
+
+    text-shadow: 2px 0px 10px blue;
+
+}
+
+.subtitle
+{
+    color: white;
+
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 900;
+    padding: 0 20px 0 20px;
+    border-radius: 25px;
+
+    background-color: #000000;
+
+    transition-property: color, background-color;
+    transition: .7s;
+}
+
+.subtitle:hover,
+.subtitle:focus 
+{
+    cursor: pointer;
+    color: #000000;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .main 
+    {
+        height: 600px;
+
+        display: inline-block;
+    }
+    .title 
+    {
+        margin-top: 50px;
+    }
+
+    .subtitle
+    {
+        transition-property: background-color, color;
+        transition-duration: .8s;
+    }
+    
+    .subtitle:hover,
+    .subtitle:focus 
+    {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
+
+
+/* =========== END  MAIN - MAIN SHEET ========= */
+
+/* =========== MAIN - MAIN CONTENT ========= */
+
+.main_content
+{
+    width: 100%;
+    max-width: 990px;
+    padding: 50px 20px;
+    margin: 0 auto;
+
+    background-color: #fff;
+
+
+    display: flex;
+    justify-content: center;
+}
+
+.main_content_column 
+{
+    width: 100%;
+    margin: 20px;
+    padding: 10px 10px 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+
+    border: 5px double black;
+    border-radius: 90px 10px;
+    transition-property: border-radius;
+    transition-duration: 1s;
+}
+
+.main_content_column:hover,
+.main_content_column:focus {
+    border-radius: 10px 90px;
+}
+
+
+.main_column_title {
+    font-size: 2em;
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.main_description {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: black;
+    background: rgba(51, 170, 51, .1);
+    font-size: 17px;
+    font-weight: 800;
+
+    border-radius: 10px;
+}
+
+.main_button {
+    padding: 10px 20px;
+    margin: 10px;
+
+    background-color: lightskyblue;
+    border: none;
+
+    font-weight: bold;
+    border-radius: 10px;
+
+    border-radius: 40px 5px;
+    transition-property: border-radius;
+    transition-duration: 1s;
+}
+.main_button:hover,
+.main_button:focus 
+{
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px 40px;
+
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+
+/* =========== END MAIN - MAIN CONTENT ---- DESKTOP DEVICE  ========= */
+
+/* =========== MAIN - MAIN CONTENT ---- MOBILE DEVICE  ========= */
+
+@media (max-width: 768px)
+{
+    .main_content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main_content_column 
+    {
+        margin: 10px;
+    
+        border: 2px solid black;
+    }
+    
+    .main_content_column:hover,
+    .main_content_column:focus {
+        border-radius: 10px 90px;
+    }
+    
+    .main_description {
+        font-family: 'Noto Sans HK', sans-serif;
+        color: black;
+        background: rgba(51, 170, 51, .1);
+        font-size: 19px;
+        font-weight: 800;
+    }
+    
+    .main_button {
+        font-size: 20px;
+    }
+}
+
+/* =========== END MAIN - MAIN CONTENT ---- MOBILE DEVICE  ========= */
+
+
+/* =========== PROYECTS AND CONTACT ---- DESKTOP DEVICE  ========= */
+
+
+.div_form
+{
+    width: 100%;
+    max-width: 990px;
+    padding: 20px;
+    margin: 0 auto;
+
+    background-color: rgba(51, 170, 51, .1);
+
+
+    display: flex;
+
+}
+
+.proyects, .contact
+{
+    width: 100%;
+    margin: 20px;
+    padding: 10px 10px 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.list_proyects_item{
+    width: 100%;
+    margin: 2px;
+    padding: 10px;
+
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+
+    list-style: circle;
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.contact_mail {
+    font-weight: 700;
+    margin: 10px;
+}
+
+.nav_link_contact,.contact_button {
+    padding: 5px 10px;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: aqua;
+    border: none;
+    border-radius: 100px;
+
+    transition-property: letter-spacing;
+    transition-duration: .2s;
+}
+
+.contact_button:hover,
+.contact_button:focus {
+    letter-spacing: 2px;
+}
+
+/* =========== END PROYECTS AND CONTACT ---- DESKTOP DEVICE  ========= */
+
+/* ===========  PROYECTS AND CONTACT ---- MOBILE DEVICE  ========= */
+
+
+@media (max-width: 768px)
+{
+    .div_form {
+        flex-direction: column;
+    }
+
+.contact_button {
+        font-size: 20px;
+    }
+}
+
+/* ===========  END  PROYECTS AND CONTACT ---- MOBILE DEVICE  ========= */
+
+
+/* Space to continue.... */
+
+
+
+
+
+/* END Space to continue.... */
+
+/* ===========  THE END -----  BY: AGUSTIN LOHEZIC ORTALI -----  ========= */
