@@ -1,5 +1,5 @@
-Scroll down and click on "Environments".
-click on the fiest "View deployment"
+Scroll down and click on "Environments". Then,
+click on the first "View deployment".
 
-or copy this: aguuuslohe.github.io/Curriculum/
-and past it into "google:https//"
+Or copy this: aguuuslohe.github.io/Curriculum/
+And past it into "google:https//"
