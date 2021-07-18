@@ -1,1 +1,1 @@
-Aquí encontraras la mayoria de mis proyectos!!
+Aquí podrás ver mi curriculum, y mis proyectos que vaya subiendo!!
