@@ -1,1 +1,1 @@
-Aquí podrás ver mi curriculum, y mis proyectos que vaya subiendo!!
+Aquí podrás ver mi curriculum entrá a mi github y verás mas proyectos como este.!!!!! :) 
