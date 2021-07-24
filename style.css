@@ -22,6 +22,8 @@ body {
     width: 100%;
     top: 0;
     left: 0;
+    
+    z-index: 10;
 }
 
 
@@ -31,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    max-width: 990px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -266,7 +268,7 @@ body {
 .main_content
 {
     width: 100%;
-    max-width: 990px;
+    max-width: 1050px;
     padding: 50px 20px;
     margin: 0 auto;
 
@@ -289,7 +291,7 @@ body {
     text-align: left;
     overflow: hidden;
 
-    border: 5px double black;
+    box-shadow: 10px 10px 20px 3px gray;
     border-radius: 90px 10px;
     transition-property: border-radius;
     transition-duration: 1s;
@@ -394,7 +396,7 @@ body {
 .div_form
 {
     width: 100%;
-    max-width: 990px;
+    max-width: 1050px;
     padding: 20px;
     margin: 0 auto;
 
@@ -478,9 +480,6 @@ body {
 
 
 /* Space to continue.... */
-
-
-
 
 
 /* END Space to continue.... */
